@@ -4,6 +4,7 @@ import { X, Instagram, Twitter, Linkedin, Youtube, Facebook } from 'lucide-react
 
 const MenuOverlay = ({ isOpen, onClose, socials }) => {
     const menuLinks = [
+        
         { name: "Portfolio", href: "#portfolio", sub: "Selected Commissions" }, // Updated Name & Link
         { name: "Studio", href: "#studio", sub: "Philosophy & Team" },
         { name: "Capabilities", href: "#work", sub: "Technical Services" },

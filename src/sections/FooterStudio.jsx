@@ -35,6 +35,7 @@ const FooterStudio = ({ data, socials }) => {
                         </div>
                         <ul className="space-y-2">
                             {/* Ensured Portfolio is here */}
+                            <li><a href="#home" className="text-white/60 hover:text-studio-lime text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer">Home</a></li>
                             <li><a href="#portfolio" className="text-white/60 hover:text-studio-lime text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer">Portfolio</a></li>
                             <li><a href="#studio" className="text-white/60 hover:text-studio-lime text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer">Philosophy</a></li>
                             <li><a href="#work" className="text-white/60 hover:text-studio-lime text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer">Services</a></li>

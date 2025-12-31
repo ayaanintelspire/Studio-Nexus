@@ -14,7 +14,7 @@ const Hero = ({ data }) => {
     }, [data.titles.length]);
 
     return (
-        <section className="relative min-h-screen grid grid-cols-1 lg:grid-cols-12 items-stretch overflow-hidden bg-studio-navy">
+        <section id='home' className="relative min-h-screen grid grid-cols-1 lg:grid-cols-12 items-stretch overflow-hidden bg-studio-navy">
 
             {/* Left Column */}
             <div className="lg:col-span-5 flex flex-col justify-center px-12 lg:px-24 pt-32 pb-16 bg-studio-navy relative z-10 font-black uppercase italic tracking-tighter">

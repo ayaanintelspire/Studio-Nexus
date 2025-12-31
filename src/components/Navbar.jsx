@@ -8,7 +8,6 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Lowered threshold for immediate impact
             setIsScrolled(window.scrollY > 20);
         };
         window.addEventListener('scroll', handleScroll);
@@ -18,13 +17,13 @@ const Navbar = () => {
     return (
         <>
             <nav className={`fixed top-0 w-full z-50 px-8 lg:px-16 flex justify-between items-center transition-all duration-700 ${isScrolled
-                    ? 'py-6 bg-studio-navy/95 backdrop-blur-2xl border-b border-white/10 shadow-2xl'
-                    : 'py-12 bg-transparent'
+                ? 'py-6 bg-studio-navy/95 backdrop-blur-2xl border-b border-white/10 shadow-2xl'
+                : 'py-12 bg-transparent'
                 }`}>
 
                 {/* 1. BIG LOGO */}
                 <div className="flex flex-col leading-none cursor-pointer group">
-                    <span className={`text-2xl lg:text-3xl font-black tracking-tighter transition-colors ${isScrolled ? 'text-white' : 'text-white'}`}>
+                    <span className="text-2xl lg:text-3xl font-black tracking-tighter text-white">
                         STUDIO <span className="text-studio-lime italic">NEXUS</span>
                     </span>
                     <span className="text-[10px] font-mono tracking-[0.5em] text-white/30 uppercase mt-1 group-hover:text-studio-lime transition-colors">
@@ -32,9 +31,10 @@ const Navbar = () => {
                     </span>
                 </div>
 
-                {/* 2. BIG BOLD NAV LINKS */}
-                <div className="hidden xl:flex gap-16 items-center">
+                {/* 2. BIG BOLD NAV LINKS (Added Home) */}
+                <div className="hidden xl:flex gap-12 items-center">
                     {[
+                        { name: 'Home', hr: '#home' },
                         { name: 'Portfolio', hr: '#portfolio' },
                         { name: 'Studio', hr: '#studio' },
                         { name: 'Process', hr: '#process' },
@@ -58,7 +58,6 @@ const Navbar = () => {
                         onClick={() => setIsMenuOpen(true)}
                         className="group flex items-center gap-4 cursor-pointer"
                     >
-                        {/* Change Line 63 to hide the text on very small screens */}
                         <div className="hidden sm:flex flex-col gap-2 items-end">
                             <div className="text-[11px] font-black uppercase tracking-[0.3em] text-studio-lime group-hover:text-white transition-colors">
                                 Open Menu
