@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Studio Nexus - Cyber Nature Palette */
+  --color-studio-navy: #1a2c38;
+  /* Deep Background */
+  --color-studio-royal: #1e4b8a;
+  /* Professional Blue */
+  --color-studio-slate: #5a7d9a;
+  /* Structural Steel */
+  --color-studio-lime: #a3ff00;
+  /* The Volt/Lime Accent */
+  --color-studio-dark: #0f172a;
+  /* Darkest Contrast */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-studio-navy);
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+}
